@@ -8,21 +8,21 @@ import (
 func main() {
 	//IF - ELSE - ELSE IF
 
-	// if 1 > 1 {
-	// 	fmt.Println("true")
-	// } else if 3 > 1 {
-	// 	fmt.Println("test")
-	// } else {
-	// 	fmt.Println("false")
-	// }
+	if 1 > 1 {
+		fmt.Println("true")
+	} else if 3 > 1 {
+		fmt.Println("test")
+	} else {
+		fmt.Println("false")
+	}
 
 	//IF COM INIT
 	//atribui o valor de test() para a variável retorno, se err for diferente de nil, printa o retorno
 	// o valor de retorno não é acessível fora do escopo do if com init
-	// if retorno, err := test(); err != nil {
-	// 	fmt.Println("true")
-	// 	fmt.Println("retorno: ", retorno)
-	// }
+	if retorno, err := test(); err != nil {
+		fmt.Println("true")
+		fmt.Println("retorno: ", retorno)
+	}
 
 	// fmt.Println(retorno)
 
@@ -54,5 +54,5 @@ func main() {
 }
 
 func test() (string, error) {
-	return "test", errors.New("test")
+	return "test", errors.New("testErro")
 }
